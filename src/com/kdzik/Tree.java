@@ -56,6 +56,7 @@ public class Tree {
     double calculateMediumVal(Node root){
         int sum = sumNode(root);
         int numOfElems = countNodes(root);
+        System.out.println(sum + " / " + numOfElems);
         double mediumVal = (double)sum/numOfElems;
         return Math.round(mediumVal * 100.0) / 100.0;
     }
